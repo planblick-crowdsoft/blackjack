@@ -11,10 +11,14 @@
     BlackJack
 </h1>
 <div>
-    <button id="new_game" onclick="draw_cards();">Neues Spiel</button>
+    <button id="new_game" onclick="newGame();">Neues Spiel</button>
 </div>
 <div class="player_container" id="player_1">
     <span>Spieler 1</span>
+    <div id="player_1_controls" class="player_controls">
+        <button onclick="drawCard('player_1', true);">Karte ziehen</button>
+        <button onclick="noMoreCards('player_1');">Fertig</button>
+    </div>
     <div class="cards_container" id="cards_player_1">
         <img class="card_image" src="images/cards/gray_back.png"/>
         <img class="card_image" src="images/cards/gray_back.png"/>
