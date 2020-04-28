@@ -23,3 +23,7 @@ body {
 .cards_container {
     margin-top: 10px;
 }
+
+.player_controls {
+    display:none;
+}
